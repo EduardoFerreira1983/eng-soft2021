@@ -1,6 +1,6 @@
 import React from 'react' // 
 
-function Header(){
+export default function Header(){
     
     return (
         <div className="bg-yellow-300 py-4">
@@ -10,4 +10,3 @@ function Header(){
     
 }
 
-export default Header;

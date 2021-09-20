@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/header'
+import Sidebar from './components/sidebar';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <h1 className="bg-red-500 mt-12 py-2">Hello REACT</h1>
       <p> { valor }</p>
+      <Sidebar/>
     </div>
   );
 }
