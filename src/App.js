@@ -6,15 +6,16 @@ import Main from './components/main';
 
 
 
-function App() {
-  
-  
-
+function App()  {
+  const nome = 'passado variável';
   return ( // é o que será renderizado no  browser
+    
     <div >
-      <Header/>
-      <Sidebar />
-      <Main/>
+      <Header nome={nome}/>
+      <div className="flex space-x-12">
+        <Sidebar />
+        <Main />
+      </div>
       <Footer />
     </div>
   );
