@@ -1,14 +1,6 @@
 import './App.css';
-// import Sidebar from './components/sidebar';
-// import Footer from './components/footer'
-// import Header from './components/header';
-// import Main from './components/main';
- import Exemplo from './components/exemplostate' //classes
-// import ExemploHooks from './components/exemplostatehooks'
-// import Card from './components/cardlist-class'
-import Card from './components/cardlist-hooks'
-import { useEffect, useState } from 'react'
-import User from './components/user'
+import Conteiner from './components/conteiner'
+
 
 function App()
 {
@@ -20,7 +12,7 @@ function App()
   //   {name: 'Bozoloide', id:'4'},
   // ]
 
-  const [ users, setUsers ] = useState();
+  // const [ users, setUsers ] = useState();
 
   // const number = 666;
 
@@ -31,20 +23,20 @@ function App()
   //     .then (users=> console.log(users) ) // saida do array - > 
   // } );
   
-  useEffect( () =>
-  {
-    // Atualiza o titulo do documento usando a API do browser
-    fetch( 'https://jsonplaceholder.typicode.com/users' )
-      .then( response => response.json() ) // formatar para json -> response.json()
-      .then( usr => setUsers( usr ) ) // saida do array - > 
-  },[]);
+  // useEffect( () =>
+  // {
+  //   // Atualiza o titulo do documento usando a API do browser
+  //   fetch( 'https://jsonplaceholder.typicode.com/users' )
+  //     .then( response => response.json() ) // formatar para json -> response.json()
+  //     .then( usr => setUsers( usr ) ) // saida do array - > 
+  // },[]);
   
 
 
   return ( // é o que será renderizado no  browser
     
     <div >
-      <User/>
+      <Conteiner />
     </div>
   );
 }
